@@ -1,0 +1,110 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: $primaryColor;
+    margin: auto;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.flex-container > div {
+    width: 32%;
+    margin: 5px;
+
+}
+
+.NintendoGameCard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .gameDate,
+    .gameTitle,
+    .gameDescription,
+    .gameReadmore {
+        margin: 0px 10px 5px 10px;
+    }
+
+}
+
+.gameDate {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gameTitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gameDescription {
+    font-size: 14px;
+}
+
+.gameReadmore {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.NintendoGameCard:hover {
+    transform: translate(0, -5px);
+    transition: 0.5s;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 500px) {
+
+
+    .flex-container {
+        width: 100%;
+        height: auto;
+        background-color: $primaryColor;
+        margin: auto;
+        padding-left: 15px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        z-index: 0;
+        justify-content: start;
+
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .flex-container > div {
+        width: 300px;
+        height: auto;
+        flex: 0 0 auto;
+        margin-bottom: auto;
+
+    }
+
+    .NintendoGameCard {
+        width: 95%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}

@@ -1,7 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+#landingPage {
+  width: 1000px;
+  height: auto;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.sectionTitle {
+  width: 950px;
+  height: auto;
+  margin: auto;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.viewMoreLink {
+  width: 800px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.viewMoreLink a {
+  color: #272727;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+  #landingPage {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+  }
+  .sectionTitle {
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+  }
+  .viewMoreLink {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .viewMoreLink a {
+    color: #272727;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  margin: auto;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.flex-container > div {
+  width: 32%;
+  margin: 5px;
+}
+
+.NintendoGameCard {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.NintendoGameCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.NintendoGameCard .gameDate,
+.NintendoGameCard .gameTitle,
+.NintendoGameCard .gameDescription,
+.NintendoGameCard .gameReadmore {
+  margin: 0px 10px 5px 10px;
+}
+
+.gameDate {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gameTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gameDescription {
+  font-size: 14px;
+}
+
+.gameReadmore {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.NintendoGameCard:hover {
+  transform: translate(0, -5px);
+  transition: 0.5s;
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+  .flex-container {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    z-index: 0;
+    justify-content: start;
+  }
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  .flex-container > div {
+    width: 300px;
+    height: auto;
+    flex: 0 0 auto;
+    margin-bottom: auto;
+  }
+  .NintendoGameCard {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.mainBanner {
+  width: 1000px;
+  height: auto;
+  padding: 5px 0px 25px 0px;
+}
+.mainBanner img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.secondaryBanner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.secondaryBanner > div {
+  width: 49%;
+  margin: auto;
+  height: auto;
+  align-content: center;
+  display: inline-block;
+  justify-content: space-evenly;
+}
+.secondaryBanner > div img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.secondaryBanner:hover {
+  transform: translate(0, -5px);
+  transition: 0.5s;
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+  .mainBanner {
+    width: 100%;
+    height: auto;
+    padding: 5px 0px 25px 0px;
+  }
+  #mainBanner {
+    content: url("../assets/img/Banners/Super-Mario-Bros-Wonder-Banner-Vertical-C.jpg");
+    width: 100%;
+    margin: auto;
+  }
+  #sambaAmigoBanner {
+    content: url("../assets/img/Banners/Samba-de-Amigo-Party-Central-Banner-V-B.jpg");
+    width: 100%;
+    margin: auto;
+  }
+  #tearsOfKingdomBanner {
+    content: url("../assets/img/Banners/The-Legend-of-Zelda-Tears-of-the-Kingdom-Banner-V-B.png");
+    width: 100%;
+    margin: auto;
+  }
+  #fireEmblemHeroesBanner {
+    content: url("../assets/img/Banners/Fire-Emblem-Heroes-Banner-Vertical-C.jpg");
+    width: 100%;
+    margin: auto;
+  }
+  #bayonetta3Banner {
+    content: url("../assets/img/Banners/Bayonetta-3-Banner-Vertical-C.jpg");
+    width: 100%;
+    margin: auto;
+  }
+  #nintendoSwitchOled {
+    content: url("../assets/img/Banners/Lanzamiento-OLED-Mario-V.png");
+    width: 100%;
+    margin: auto;
+  }
+  .readMore {
+    text-decoration: underline;
+  }
+  .secondaryBanner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .secondaryBanner > div {
+    width: 100%;
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    height: auto;
+    align-content: center;
+    display: inline-block;
+  }
+}
+footer {
+  width: auto;
+  height: 100px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  margin: auto;
+}
+.logo img {
+  width: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

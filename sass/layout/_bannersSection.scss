@@ -1,0 +1,112 @@
+.mainBanner {
+    width: 1000px;
+    height: auto;
+    padding: 5px 0px 25px 0px;
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.secondaryBanner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: $primaryColor;
+    margin: auto;
+
+}
+
+.secondaryBanner > div {
+    width: 49%;
+    margin: auto;
+    height: auto;
+    align-content: center;
+    display: inline-block;
+    justify-content: space-evenly;
+    
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.secondaryBanner:hover {
+    transform: translate(0, -5px);
+    transition: 0.5s;
+}
+
+
+@media (min-width: 100px) and (max-width: 500px) {
+
+    .mainBanner {
+        width: 100%;
+        height: auto;
+        padding: 5px 0px 25px 0px;
+    }
+
+    #mainBanner {
+        content: url("../assets/img/Banners/Super-Mario-Bros-Wonder-Banner-Vertical-C.jpg");
+        width: 100%;
+        margin: auto;
+    }
+
+    #sambaAmigoBanner {
+        content: url("../assets/img/Banners/Samba-de-Amigo-Party-Central-Banner-V-B.jpg");
+        width: 100%;
+        margin: auto;
+    }
+
+    #tearsOfKingdomBanner {
+        content: url("../assets/img/Banners/The-Legend-of-Zelda-Tears-of-the-Kingdom-Banner-V-B.png");
+        width: 100%;
+        margin: auto;
+    }
+
+    #fireEmblemHeroesBanner {
+        content: url("../assets/img/Banners/Fire-Emblem-Heroes-Banner-Vertical-C.jpg");
+        width: 100%;
+        margin: auto;
+    }
+
+    #bayonetta3Banner {
+        content: url("../assets/img/Banners/Bayonetta-3-Banner-Vertical-C.jpg");
+        width: 100%;
+        margin: auto;
+    }
+
+    #nintendoSwitchOled {
+        content: url("../assets/img/Banners/Lanzamiento-OLED-Mario-V.png");
+        width: 100%;
+        margin: auto;
+    }
+
+    .readMore {
+        text-decoration: underline;
+    }
+
+
+
+    .secondaryBanner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        background-color: $primaryColor;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .secondaryBanner > div {
+        width: 100%;
+        padding: 5px;
+        margin: 0px 0px 0px 0px;
+        height: auto;
+        align-content: center;
+        display: inline-block;
+    }
+
+}
