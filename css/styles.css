@@ -132,7 +132,7 @@ hr {
 .NintendoGameCardB .gameTitle p,
 .NintendoGameCardB .gameDescription p,
 .NintendoGameCardB .gameReadmore p {
-  margin: 4px 5px 0px 5px;
+  margin: 0px 5px 0px 5px;
   text-align: justify;
 }
 
@@ -191,7 +191,7 @@ hr {
     margin-bottom: auto;
   }
   .flex-container .NintendoGameCardB {
-    width: 350px;
+    width: 360px;
     height: auto;
     flex: 0 0 auto;
     margin-bottom: auto;
@@ -327,8 +327,7 @@ hr {
 .NintendoNewsCard .gameTitle p,
 .NintendoNewsCard .gameDescription p,
 .NintendoNewsCard .gameReadmore p {
-  margin: 4px 5px 0px 5px;
-  text-align: justify;
+  margin: 0px 5px 0px 5px;
 }
 
 .gameDate {
@@ -399,4 +398,4 @@ footer {
   width: 150px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
