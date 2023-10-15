@@ -11,11 +11,17 @@
 
     .NintendoGameCard {
         width: 32%;
-        margin: 5px;}
+        margin: 5px;
+    }
+
+    .NintendoGameCardB {
+        width: 48.2%;
+        margin: 5px;
+    }
 }
 
 
-.NintendoGameCard {
+.NintendoGameCard, .NintendoGameCardB {
     width: 100%;
     height: auto;
     display: flex;
@@ -26,14 +32,10 @@
         width: 100%;
         height: auto;
         border-radius: 5px;
+        margin-bottom: 8px;
     }
 
-    .gameDate {
-        p {
-            margin: 8px 5px 0px 5px;
-        }
-    }
-
+    .gameDate,
     .gameTitle,
     .gameDescription,
     .gameReadmore {
@@ -72,6 +74,10 @@
     transition: 0.5s;
 }
 
+.NintendoGameCardB:hover {
+    transform: translate(0, -10px);
+    transition: 0.5s;
+}
 
 
 @media (min-width: 100px) and (max-width: 500px) {
@@ -93,6 +99,20 @@
         z-index: 0;
         justify-content: start;
 
+        .NintendoGameCard {
+        width: 300px;
+        height: auto;
+        flex: 0 0 auto;
+        margin-bottom: auto;
+        }
+    
+        .NintendoGameCardB {
+            width: 360px;
+        height: auto;
+        flex: 0 0 auto;
+        margin-bottom: auto;
+        }
+
     }
 
     .NintendoGameCard {
@@ -106,14 +126,5 @@
     .container::-webkit-scrollbar {
         display: none;
     }
-
-    .flex-container>.NintendoGameCard {
-        width: 300px;
-        height: auto;
-        flex: 0 0 auto;
-        margin-bottom: auto;
-
-    }
-
 
 }
