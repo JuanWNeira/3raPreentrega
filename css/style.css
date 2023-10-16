@@ -21,6 +21,7 @@ body {
   width: 950px;
   height: auto;
   margin: auto;
+  padding-top: 20px;
   padding-bottom: 20px;
   font-size: 20px;
   font-weight: 700;
@@ -48,6 +49,12 @@ hr {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.article {
+  width: 100%;
+  padding: 10px;
+  text-align: justify;
 }
 
 .Pagination {
@@ -78,10 +85,17 @@ hr {
     width: 100%;
     height: auto;
     padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
     float: left;
+  }
+  .article {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    text-align: justify;
   }
   .viewMoreLink {
     width: 200px;
@@ -151,6 +165,28 @@ hr {
 .NintendoGameCardB .gameReadmore p {
   margin: 4px 5px 0px 5px;
   text-align: justify;
+  color: black;
+}
+.NintendoGameCard .gameDate a,
+.NintendoGameCard .gameTitle a,
+.NintendoGameCard .gameDescription a,
+.NintendoGameCard .gameReadmore a,
+.NintendoGameCardB .gameDate a,
+.NintendoGameCardB .gameTitle a,
+.NintendoGameCardB .gameDescription a,
+.NintendoGameCardB .gameReadmore a {
+  text-decoration: none;
+  color: #272727;
+}
+.NintendoGameCard .gameDate a:hover,
+.NintendoGameCard .gameTitle a:hover,
+.NintendoGameCard .gameDescription a:hover,
+.NintendoGameCard .gameReadmore a:hover,
+.NintendoGameCardB .gameDate a:hover,
+.NintendoGameCardB .gameTitle a:hover,
+.NintendoGameCardB .gameDescription a:hover,
+.NintendoGameCardB .gameReadmore a:hover {
+  color: purple;
 }
 
 .gameDate {
