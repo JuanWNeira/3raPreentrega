@@ -188,6 +188,16 @@ hr {
 .NintendoGameCardB .gameReadmore a:hover {
   color: purple;
 }
+.NintendoGameCard .gameDate a:visited,
+.NintendoGameCard .gameTitle a:visited,
+.NintendoGameCard .gameDescription a:visited,
+.NintendoGameCard .gameReadmore a:visited,
+.NintendoGameCardB .gameDate a:visited,
+.NintendoGameCardB .gameTitle a:visited,
+.NintendoGameCardB .gameDescription a:visited,
+.NintendoGameCardB .gameReadmore a:visited {
+  color: purple;
+}
 
 .gameDate {
   font-size: 14px;
@@ -213,11 +223,13 @@ hr {
 .NintendoGameCard:hover {
   transform: translate(0, -10px);
   transition: 0.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .NintendoGameCardB:hover {
   transform: translate(0, -10px);
   transition: 0.5s;
+  animation-timing-function: ease-in-out;
 }
 
 @media (min-width: 100px) and (max-width: 500px) {
@@ -408,6 +420,7 @@ hr {
 .NintendoNewsCard:hover {
   transform: translate(0, -10px);
   transition: 0.5s;
+  animation-timing-function: ease-in-out;
 }
 
 @media (min-width: 100px) and (max-width: 500px) {

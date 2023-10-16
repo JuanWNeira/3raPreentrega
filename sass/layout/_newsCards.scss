@@ -68,9 +68,15 @@
 }
 
 
-.NintendoNewsCard:hover {
+@mixin cardAnimations {
     transform: translate(0, -10px);
     transition: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+.NintendoNewsCard:hover {
+    @include cardAnimations;
 }
 
 

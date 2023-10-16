@@ -49,10 +49,16 @@
             color: black;
         }
 
-        a {text-decoration: none;
-        color:$secondaryColor}
+        a {
+            text-decoration: none;
+            color: $secondaryColor
+        }
 
         a:hover {
+            color: purple;
+        }
+
+        a:visited {
             color: purple;
         }
     }
@@ -72,25 +78,30 @@
 .gameDescription {
     font-size: 14px;
     text-align: justify;
+
 }
 
 .gameReadmore {
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 700;
+
 }
 
-
-.NintendoGameCard:hover {
+@mixin cardAnimations {
     transform: translate(0, -10px);
     transition: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.NintendoGameCard:hover {
+    @include cardAnimations;
 }
 
 .NintendoGameCardB:hover {
-    transform: translate(0, -10px);
-    transition: 0.5s;
-}
+    @include cardAnimations;
 
+}
 
 @media (min-width: 100px) and (max-width: 500px) {
 
