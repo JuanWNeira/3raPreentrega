@@ -74,7 +74,39 @@ hr {
   text-decoration: none;
 }
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .sectionTitle {
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+  }
+  .article {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    text-align: justify;
+  }
+  .viewMoreLink {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .viewMoreLink a {
+    color: #272727;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+@media (min-width: 100px) and (max-width: 480px) {
   #landingPage {
     width: 100%;
     height: auto;
@@ -232,7 +264,34 @@ hr {
   animation-timing-function: ease-in-out;
 }
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  #landingPage {
+    width: 1000px;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 5px 0px 0px 0px;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  .flex-container .NintendoGameCard {
+    width: 45%;
+    margin: 5px;
+  }
+  .flex-container .NintendoGameCardB {
+    width: 48%;
+    margin: 5px;
+  }
+}
+@media (min-width: 100px) and (max-width: 480px) {
   .flex-container {
     width: 100%;
     height: auto;
@@ -423,7 +482,27 @@ hr {
   animation-timing-function: ease-in-out;
 }
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 5px 0px 0px 0px;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  .flex-container .NintendoNewsCard {
+    width: 48%;
+    margin: 5px;
+  }
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (min-width: 100px) and (max-width: 480px) {
   .flex-container {
     width: 100%;
     height: auto;

@@ -103,7 +103,47 @@
 
 }
 
-@media (min-width: 100px) and (max-width: 500px) {
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #landingPage {
+        width: 1000px;
+        height: auto;
+        background-color: $primaryColor;
+        margin: auto;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        background-color: $primaryColor;
+        padding: 5px 0px 0px 0px;
+        justify-content: space-evenly;
+        gap: 5px;
+    
+        .NintendoGameCard {
+            width: 45%;
+            margin: 5px;
+        }
+    
+        .NintendoGameCardB {
+            width: 48%;
+            margin: 5px;
+        }
+    
+    }
+    
+
+}
+
+
+
+
+@media (min-width: 100px) and (max-width: 480px) {
 
 
     .flex-container {

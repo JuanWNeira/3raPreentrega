@@ -79,7 +79,55 @@ hr {
 
 }
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .sectionTitle {
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        float: left;
+    }
+
+    .article {
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        text-align: justify
+    }
+
+    .viewMoreLink {
+        width: 200px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .viewMoreLink a {
+        color: $secondaryColor;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media (min-width: 100px) and (max-width: 480px) {
 
     #landingPage {
         width: 100%;
