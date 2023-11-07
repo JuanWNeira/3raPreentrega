@@ -42,6 +42,19 @@
             text-align: justify;
         }
 
+        a {
+            text-decoration: none;
+            color: $secondaryColor
+        }
+
+        a:hover {
+            color: purple;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
     }
 
 }

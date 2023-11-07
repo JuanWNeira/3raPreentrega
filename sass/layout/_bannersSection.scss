@@ -19,7 +19,7 @@
 
 }
 
-.secondaryBanner>div {
+.secondaryBanner > div {
     width: 49%;
     margin: auto;
     height: auto;
@@ -40,7 +40,23 @@
 }
 
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .mainBanner {
+        width: 100%;
+        height: auto;
+        padding: 5px 0px 25px 0px;
+    
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+}
+
+
+@media (min-width: 100px) and (max-width: 480px) {
 
     .mainBanner {
         width: 100%;

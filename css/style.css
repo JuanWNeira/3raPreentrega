@@ -56,6 +56,11 @@ hr {
   padding: 10px;
   text-align: justify;
 }
+.article img {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
 
 .Pagination {
   list-style-type: none;
@@ -361,7 +366,18 @@ hr {
   transition: 0.5s;
 }
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .mainBanner {
+    width: 100%;
+    height: auto;
+    padding: 5px 0px 25px 0px;
+  }
+  .mainBanner img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 100px) and (max-width: 480px) {
   .mainBanner {
     width: 100%;
     height: auto;
@@ -453,6 +469,25 @@ hr {
 .NintendoNewsCard .gameReadmore p {
   margin: 4px 5px 0px 5px;
   text-align: justify;
+}
+.NintendoNewsCard .gameDate a,
+.NintendoNewsCard .gameTitle a,
+.NintendoNewsCard .gameDescription a,
+.NintendoNewsCard .gameReadmore a {
+  text-decoration: none;
+  color: #272727;
+}
+.NintendoNewsCard .gameDate a:hover,
+.NintendoNewsCard .gameTitle a:hover,
+.NintendoNewsCard .gameDescription a:hover,
+.NintendoNewsCard .gameReadmore a:hover {
+  color: purple;
+}
+.NintendoNewsCard .gameDate a:visited,
+.NintendoNewsCard .gameTitle a:visited,
+.NintendoNewsCard .gameDescription a:visited,
+.NintendoNewsCard .gameReadmore a:visited {
+  color: purple;
 }
 
 .gameDate {
